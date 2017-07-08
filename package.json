@@ -1,6 +1,6 @@
 {
   "name": "condition-codefresh",
-  "author": "Daniel Olivares",
+  "author": "Daniel Olivares <fuzzoli87@gmail.com>",
   "version": "0.0.0-semantically-released",
   "scripts": {
     "start": "nps",
@@ -12,6 +12,7 @@
     "node": ">=4",
     "npm": ">=3"
   },
+  "license": "MIT",
   "files": [
     "dist"
   ],
@@ -84,5 +85,6 @@
   },
   "bugs": {
     "url": "https://github.com/FuzzOli87/condition-codefresh/issues"
-  }
+  },
+  "homepage": "https://github.com/FuzzOli87/condition-codefresh#readme"
 }
