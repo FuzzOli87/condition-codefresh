@@ -1,0 +1,3 @@
+[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=parkhub&repoName=condition-codefresh&branch=master&pipelineName=condition-codefresh&accountName=loganbfisher&type=cf-1)]( https://g.codefresh.io/repositories/parkhub/condition-codefresh/builds?filter=trigger:build;branch:master;service:595d3b68805e77000117c7e9~condition-codefresh)
+[![Dependency Status](https://dependencyci.com/github/parkhub/condition-codefresh/badge)](https://dependencyci.com/github/parkhub/condition-codefresh)
+[![codecov](https://codecov.io/gh/parkhub/condition-codefresh/branch/master/graph/badge.svg)](https://codecov.io/gh/parkhub/condition-codefresh)

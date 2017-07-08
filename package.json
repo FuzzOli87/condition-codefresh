@@ -1,0 +1,88 @@
+{
+  "name": "condition-fresh",
+  "author": "Daniel Olivares",
+  "version": "0.0.0-semantically-released",
+  "scripts": {
+    "start": "nps",
+    "commitmsg": "opt --in commit-msg --exec \"validate-commit-msg\"",
+    "precommit": "opt --in pre-commit --exec \"npm start validate\""
+  },
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=4",
+    "npm": ">=3"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@semantic-release/error": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-strict-mode": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
+    "codecov": "^2.2.0",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "documentation": "^4.0.0-rc.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-loader": "^1.8.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-jest": "^20.0.3",
+    "husky": "^0.14.1",
+    "jest": "^20.0.4",
+    "nps": "^5.3.2",
+    "nps-utils": "^1.2.0",
+    "opt-cli": "^1.5.1",
+    "prettier-eslint-cli": "^4.1.1",
+    "rimraf": "^2.6.1",
+    "semantic-release": "^6.3.6",
+    "validate-commit-msg": "^2.12.2"
+  },
+  "release": {
+    "verifyConditions": "./dist",
+    "debug": true
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "verbose": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "testMatch": [
+      "**/__tests__/**/*test.js?(x)"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "dist/*"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parkhub/condition-codefresh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/parkhub/condition-codefresh/issues"
+  }
+}
