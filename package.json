@@ -46,8 +46,7 @@
     "validate-commit-msg": "^2.12.2"
   },
   "release": {
-    "verifyConditions": "./dist",
-    "debug": true
+    "verifyConditions": "./dist"
   },
   "config": {
     "commitizen": {
