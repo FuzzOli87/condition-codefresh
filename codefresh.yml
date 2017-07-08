@@ -3,7 +3,7 @@ steps:
   BuildingDockerImage:
     title: Building Docker Image
     type: build
-    image_name: parkhubprime/condition-codefresh
+    image_name: condition-codefresh
     dockerfile: Dockerfile
   RunningTests:
     title: Running tests
